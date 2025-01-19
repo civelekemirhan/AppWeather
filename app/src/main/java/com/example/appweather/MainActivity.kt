@@ -11,16 +11,22 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.rememberNavController
+import com.example.appweather.navigation.SetupNavGraph
 import com.example.appweather.presentation.splash.SplashScreen
+import com.example.appweather.presentation.weather.WeatherScreen
 import com.example.appweather.ui.theme.AppWeatherTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
             AppWeatherTheme {
-               SplashScreen()
+               SetupNavGraph(navController = rememberNavController())
             }
         }
     }
