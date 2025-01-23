@@ -1,7 +1,7 @@
 package com.example.appweather.di
 
-import com.example.appweather.presentation.weather.LocationRepository
-import com.example.appweather.presentation.weather.LocationRepositoryImpl
+import com.example.appweather.presentation.LocationRepository
+import com.example.appweather.presentation.LocationRepositoryImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

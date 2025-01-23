@@ -9,5 +9,8 @@ object Constants {
     const val ROOT_GRAPH_ROUTE="root_graph"
     const val HOME_GRAPH_ROUTE="home_graph"
 
+    const val BASE_URL="https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/"
+    const val API_KEY="M6HNTLBTZKZ2RGLDW8X7NFXRF"
+
 
 }

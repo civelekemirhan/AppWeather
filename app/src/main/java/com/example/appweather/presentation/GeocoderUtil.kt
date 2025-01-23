@@ -1,5 +1,6 @@
-package com.example.appweather.presentation.weather
+package com.example.appweather.presentation
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.location.Address
 import android.location.Geocoder
@@ -9,6 +10,7 @@ import java.util.Locale
 
 object GeocoderUtil {
 
+    @SuppressLint("SuspiciousIndentation")
     fun getLocationName(activity: Activity, lat:Double, lon:Double):String{
         val geocoder = Geocoder(activity, Locale.getDefault())
 

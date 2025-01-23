@@ -20,7 +20,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import com.example.appweather.R
 import com.example.appweather.ui.theme.SMALL_PADDING
-import com.example.appweather.ui.theme.SplashScreenTextColor
+import com.example.appweather.ui.theme.TextColor
 import com.example.appweather.ui.theme.appBackground
 import kotlinx.coroutines.delay
 
@@ -47,7 +47,7 @@ fun SplashScreen(onSplashFinished: () -> Unit) {
         Text(
             text = stringResource(R.string.app_name),
             style = MaterialTheme.typography.titleLarge,
-            color = MaterialTheme.colorScheme.SplashScreenTextColor,
+            color = MaterialTheme.colorScheme.TextColor,
             fontSize = 30.sp,
             fontFamily = FontFamily.SansSerif,
             letterSpacing = 5.sp

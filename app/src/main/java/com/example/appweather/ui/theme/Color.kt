@@ -15,7 +15,8 @@ val PurpleGrey40 = Color(0xFF625b71)
 val Pink40 = Color(0xFF7D5260)
 
 
-val Blue3=Color(0xFF91DAFF)
+val mainWeatherBack=Color(0xFF344E5A)
+val secondaryWeatherBack=Color(0xFF648898)
 
 
 
@@ -26,7 +27,7 @@ val ColorScheme.appBackground
     @Composable
     get()=if(isSystemInDarkTheme()) Color.Black else Color.White
 
-val ColorScheme.SplashScreenTextColor
+val ColorScheme.TextColor
     @Composable
     get()=if(isSystemInDarkTheme()) Color.White else Color.Black
 
